@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Text;
 using System.Windows.Forms.DataVisualization.Charting;
+using Tyuiu.NikitinRYu.Sprint6.Task7.V8.Properties;
 using Tyuiu.NikitinRYu.Sprint7.Task0.V8.Lib;
 
 
@@ -23,6 +24,13 @@ namespace Tyuiu.NikitinRYu.Sprint7.Task0.V8
         {
             InitializeComponent();
             this.Load += MainForm_Load;
+
+            //buttonAddCar_NRY.Image = Resources.table_add;
+            //buttonEditCar_NRY.Image = Resources.table_edit;
+
+            //buttonDone.Image = Resources.page_go;
+            //buttonHelp.Image = Resources.help;
+            //buttonSave.Image = Resources.page_save;
         }
 
         private void buttonAddCar_NRY_Click(object sender, EventArgs e)

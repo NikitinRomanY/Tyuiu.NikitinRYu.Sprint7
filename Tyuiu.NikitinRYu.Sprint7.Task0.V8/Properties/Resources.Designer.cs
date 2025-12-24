@@ -63,7 +63,7 @@ namespace Tyuiu.NikitinRYu.Sprint6.Task7.V8.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap folder_page {
+        internal static System.Drawing.Bitmap table_edit {
             get {
                 object obj = ResourceManager.GetObject("folder_page", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

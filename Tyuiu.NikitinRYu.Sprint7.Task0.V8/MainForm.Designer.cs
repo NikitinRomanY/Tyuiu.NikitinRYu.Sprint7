@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             tabControlMain_NRY = new TabControl();
@@ -78,6 +80,7 @@
             textBoxDriverStats_NRY = new TextBox();
             groupBoxCarStats_NRY = new GroupBox();
             textBoxCarStats_NRY = new TextBox();
+            toolTip_NRY = new ToolTip(components);
             tabControlMain_NRY.SuspendLayout();
             tabPageCars_NRY.SuspendLayout();
             panelCarsControls_NRY.SuspendLayout();
@@ -134,9 +137,9 @@
             panelCarsControls_NRY.Controls.Add(buttonEditCar_NRY);
             panelCarsControls_NRY.Controls.Add(buttonAddCar_NRY);
             panelCarsControls_NRY.Dock = DockStyle.Bottom;
-            panelCarsControls_NRY.Location = new Point(3, 549);
+            panelCarsControls_NRY.Location = new Point(3, 534);
             panelCarsControls_NRY.Name = "panelCarsControls_NRY";
-            panelCarsControls_NRY.Size = new Size(1170, 40);
+            panelCarsControls_NRY.Size = new Size(1170, 55);
             panelCarsControls_NRY.TabIndex = 2;
             // 
             // labelCarsCount_NRY
@@ -150,31 +153,37 @@
             // 
             // buttonDeleteCar_NRY
             // 
+            buttonDeleteCar_NRY.Cursor = Cursors.Hand;
+            buttonDeleteCar_NRY.Image = (Image)resources.GetObject("buttonDeleteCar_NRY.Image");
             buttonDeleteCar_NRY.Location = new Point(280, 3);
             buttonDeleteCar_NRY.Name = "buttonDeleteCar_NRY";
-            buttonDeleteCar_NRY.Size = new Size(80, 34);
+            buttonDeleteCar_NRY.Size = new Size(80, 45);
             buttonDeleteCar_NRY.TabIndex = 0;
-            buttonDeleteCar_NRY.Text = "Удалить";
+            toolTip_NRY.SetToolTip(buttonDeleteCar_NRY, "Удаляет выбранную строку авто");
             buttonDeleteCar_NRY.UseVisualStyleBackColor = true;
             buttonDeleteCar_NRY.Click += buttonDeleteCar_NRY_Click;
             // 
             // buttonEditCar_NRY
             // 
+            buttonEditCar_NRY.Cursor = Cursors.Hand;
+            buttonEditCar_NRY.Image = (Image)resources.GetObject("buttonEditCar_NRY.Image");
             buttonEditCar_NRY.Location = new Point(194, 3);
             buttonEditCar_NRY.Name = "buttonEditCar_NRY";
-            buttonEditCar_NRY.Size = new Size(80, 34);
+            buttonEditCar_NRY.Size = new Size(80, 45);
             buttonEditCar_NRY.TabIndex = 0;
-            buttonEditCar_NRY.Text = "Изменить";
+            toolTip_NRY.SetToolTip(buttonEditCar_NRY, "Окрывает окно изменения авто");
             buttonEditCar_NRY.UseVisualStyleBackColor = true;
             buttonEditCar_NRY.Click += buttonEditCar_NRY_Click;
             // 
             // buttonAddCar_NRY
             // 
+            buttonAddCar_NRY.Cursor = Cursors.Hand;
+            buttonAddCar_NRY.Image = (Image)resources.GetObject("buttonAddCar_NRY.Image");
             buttonAddCar_NRY.Location = new Point(108, 3);
             buttonAddCar_NRY.Name = "buttonAddCar_NRY";
-            buttonAddCar_NRY.Size = new Size(80, 34);
+            buttonAddCar_NRY.Size = new Size(80, 45);
             buttonAddCar_NRY.TabIndex = 0;
-            buttonAddCar_NRY.Text = "Добавить";
+            toolTip_NRY.SetToolTip(buttonAddCar_NRY, "Окрывает окно добавления авто");
             buttonAddCar_NRY.UseVisualStyleBackColor = true;
             buttonAddCar_NRY.Click += buttonAddCar_NRY_Click;
             // 
@@ -211,9 +220,9 @@
             panelDriversControls_NRY.Controls.Add(buttonEditDriver_NRY);
             panelDriversControls_NRY.Controls.Add(buttonAddDriver_NRY);
             panelDriversControls_NRY.Dock = DockStyle.Bottom;
-            panelDriversControls_NRY.Location = new Point(3, 549);
+            panelDriversControls_NRY.Location = new Point(3, 534);
             panelDriversControls_NRY.Name = "panelDriversControls_NRY";
-            panelDriversControls_NRY.Size = new Size(1170, 40);
+            panelDriversControls_NRY.Size = new Size(1170, 55);
             panelDriversControls_NRY.TabIndex = 3;
             // 
             // labelDriversCount_NRY
@@ -227,31 +236,37 @@
             // 
             // buttonDeleteDriver_NRY
             // 
+            buttonDeleteDriver_NRY.Cursor = Cursors.Hand;
+            buttonDeleteDriver_NRY.Image = (Image)resources.GetObject("buttonDeleteDriver_NRY.Image");
             buttonDeleteDriver_NRY.Location = new Point(280, 3);
             buttonDeleteDriver_NRY.Name = "buttonDeleteDriver_NRY";
-            buttonDeleteDriver_NRY.Size = new Size(80, 34);
+            buttonDeleteDriver_NRY.Size = new Size(80, 45);
             buttonDeleteDriver_NRY.TabIndex = 1;
-            buttonDeleteDriver_NRY.Text = "Удалить";
+            toolTip_NRY.SetToolTip(buttonDeleteDriver_NRY, "Удаляет выбранную строку водителя");
             buttonDeleteDriver_NRY.UseVisualStyleBackColor = true;
             buttonDeleteDriver_NRY.Click += buttonDeleteDriver_NRY_Click;
             // 
             // buttonEditDriver_NRY
             // 
+            buttonEditDriver_NRY.Cursor = Cursors.Hand;
+            buttonEditDriver_NRY.Image = (Image)resources.GetObject("buttonEditDriver_NRY.Image");
             buttonEditDriver_NRY.Location = new Point(194, 3);
             buttonEditDriver_NRY.Name = "buttonEditDriver_NRY";
-            buttonEditDriver_NRY.Size = new Size(80, 34);
+            buttonEditDriver_NRY.Size = new Size(80, 45);
             buttonEditDriver_NRY.TabIndex = 2;
-            buttonEditDriver_NRY.Text = "Изменить";
+            toolTip_NRY.SetToolTip(buttonEditDriver_NRY, "Окрывает окно изменения водителя");
             buttonEditDriver_NRY.UseVisualStyleBackColor = true;
             buttonEditDriver_NRY.Click += buttonEditDriver_NRY_Click;
             // 
             // buttonAddDriver_NRY
             // 
+            buttonAddDriver_NRY.Cursor = Cursors.Hand;
+            buttonAddDriver_NRY.Image = (Image)resources.GetObject("buttonAddDriver_NRY.Image");
             buttonAddDriver_NRY.Location = new Point(108, 3);
             buttonAddDriver_NRY.Name = "buttonAddDriver_NRY";
-            buttonAddDriver_NRY.Size = new Size(80, 34);
+            buttonAddDriver_NRY.Size = new Size(80, 45);
             buttonAddDriver_NRY.TabIndex = 3;
-            buttonAddDriver_NRY.Text = "Добавить";
+            toolTip_NRY.SetToolTip(buttonAddDriver_NRY, "Окрывает окно добавления водителя");
             buttonAddDriver_NRY.UseVisualStyleBackColor = true;
             buttonAddDriver_NRY.Click += buttonAddDriver_NRY_Click;
             // 
@@ -288,9 +303,9 @@
             panelTripsControls_NRY.Controls.Add(buttonEditTrip_NRY);
             panelTripsControls_NRY.Controls.Add(buttonAddTrip_NRY);
             panelTripsControls_NRY.Dock = DockStyle.Bottom;
-            panelTripsControls_NRY.Location = new Point(3, 549);
+            panelTripsControls_NRY.Location = new Point(3, 534);
             panelTripsControls_NRY.Name = "panelTripsControls_NRY";
-            panelTripsControls_NRY.Size = new Size(1170, 40);
+            panelTripsControls_NRY.Size = new Size(1170, 55);
             panelTripsControls_NRY.TabIndex = 4;
             // 
             // labelTripsCount_NRY
@@ -304,31 +319,37 @@
             // 
             // buttonDeleteTrip_NRY
             // 
+            buttonDeleteTrip_NRY.Cursor = Cursors.Hand;
+            buttonDeleteTrip_NRY.Image = (Image)resources.GetObject("buttonDeleteTrip_NRY.Image");
             buttonDeleteTrip_NRY.Location = new Point(280, 3);
             buttonDeleteTrip_NRY.Name = "buttonDeleteTrip_NRY";
-            buttonDeleteTrip_NRY.Size = new Size(80, 34);
+            buttonDeleteTrip_NRY.Size = new Size(80, 45);
             buttonDeleteTrip_NRY.TabIndex = 4;
-            buttonDeleteTrip_NRY.Text = "Удалить";
+            toolTip_NRY.SetToolTip(buttonDeleteTrip_NRY, "Удаляет выбранную строку маршрута");
             buttonDeleteTrip_NRY.UseVisualStyleBackColor = true;
             buttonDeleteTrip_NRY.Click += buttonDeleteTrip_NRY_Click;
             // 
             // buttonEditTrip_NRY
             // 
+            buttonEditTrip_NRY.Cursor = Cursors.Hand;
+            buttonEditTrip_NRY.Image = (Image)resources.GetObject("buttonEditTrip_NRY.Image");
             buttonEditTrip_NRY.Location = new Point(194, 3);
             buttonEditTrip_NRY.Name = "buttonEditTrip_NRY";
-            buttonEditTrip_NRY.Size = new Size(80, 34);
+            buttonEditTrip_NRY.Size = new Size(80, 45);
             buttonEditTrip_NRY.TabIndex = 5;
-            buttonEditTrip_NRY.Text = "Изменить";
+            toolTip_NRY.SetToolTip(buttonEditTrip_NRY, "Окрывает окно изменения маршрута");
             buttonEditTrip_NRY.UseVisualStyleBackColor = true;
             buttonEditTrip_NRY.Click += buttonEditTrip_NRY_Click;
             // 
             // buttonAddTrip_NRY
             // 
+            buttonAddTrip_NRY.Cursor = Cursors.Hand;
+            buttonAddTrip_NRY.Image = (Image)resources.GetObject("buttonAddTrip_NRY.Image");
             buttonAddTrip_NRY.Location = new Point(108, 3);
             buttonAddTrip_NRY.Name = "buttonAddTrip_NRY";
-            buttonAddTrip_NRY.Size = new Size(80, 34);
+            buttonAddTrip_NRY.Size = new Size(80, 45);
             buttonAddTrip_NRY.TabIndex = 6;
-            buttonAddTrip_NRY.Text = "Добавить";
+            toolTip_NRY.SetToolTip(buttonAddTrip_NRY, "Окрывает окно добавления маршрута");
             buttonAddTrip_NRY.UseVisualStyleBackColor = true;
             buttonAddTrip_NRY.Click += buttonAddTrip_NRY_Click;
             // 
@@ -372,9 +393,9 @@
             dataGridViewSearchResults_NRY.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewSearchResults_NRY.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewSearchResults_NRY.Dock = DockStyle.Fill;
-            dataGridViewSearchResults_NRY.Location = new Point(3, 51);
+            dataGridViewSearchResults_NRY.Location = new Point(3, 67);
             dataGridViewSearchResults_NRY.Name = "dataGridViewSearchResults_NRY";
-            dataGridViewSearchResults_NRY.Size = new Size(1170, 538);
+            dataGridViewSearchResults_NRY.Size = new Size(1170, 522);
             dataGridViewSearchResults_NRY.TabIndex = 1;
             // 
             // panelSearchControls_NRY
@@ -387,40 +408,44 @@
             panelSearchControls_NRY.Dock = DockStyle.Top;
             panelSearchControls_NRY.Location = new Point(3, 3);
             panelSearchControls_NRY.Name = "panelSearchControls_NRY";
-            panelSearchControls_NRY.Size = new Size(1170, 48);
+            panelSearchControls_NRY.Size = new Size(1170, 64);
             panelSearchControls_NRY.TabIndex = 0;
             // 
             // buttonResetSearch_NRY
             // 
+            buttonResetSearch_NRY.Cursor = Cursors.Hand;
+            buttonResetSearch_NRY.Image = (Image)resources.GetObject("buttonResetSearch_NRY.Image");
             buttonResetSearch_NRY.Location = new Point(704, 10);
             buttonResetSearch_NRY.Name = "buttonResetSearch_NRY";
-            buttonResetSearch_NRY.Size = new Size(75, 25);
+            buttonResetSearch_NRY.Size = new Size(75, 45);
             buttonResetSearch_NRY.TabIndex = 3;
-            buttonResetSearch_NRY.Text = "Сброс";
+            toolTip_NRY.SetToolTip(buttonResetSearch_NRY, "Сбрасывает все условия поиска");
             buttonResetSearch_NRY.UseVisualStyleBackColor = true;
             buttonResetSearch_NRY.Click += buttonResetSearch_NRY_Click;
             // 
             // buttonSearch_NRY
             // 
+            buttonSearch_NRY.Cursor = Cursors.Hand;
+            buttonSearch_NRY.Image = (Image)resources.GetObject("buttonSearch_NRY.Image");
             buttonSearch_NRY.Location = new Point(624, 10);
             buttonSearch_NRY.Name = "buttonSearch_NRY";
-            buttonSearch_NRY.Size = new Size(75, 25);
+            buttonSearch_NRY.Size = new Size(75, 45);
             buttonSearch_NRY.TabIndex = 3;
-            buttonSearch_NRY.Text = "Найти";
+            toolTip_NRY.SetToolTip(buttonSearch_NRY, "Применяет заданные параметры поиска");
             buttonSearch_NRY.UseVisualStyleBackColor = true;
             buttonSearch_NRY.Click += buttonSearch_NRY_Click;
             // 
             // comboBoxSearchField_NRY
             // 
             comboBoxSearchField_NRY.FormattingEnabled = true;
-            comboBoxSearchField_NRY.Location = new Point(454, 12);
+            comboBoxSearchField_NRY.Location = new Point(454, 21);
             comboBoxSearchField_NRY.Name = "comboBoxSearchField_NRY";
             comboBoxSearchField_NRY.Size = new Size(150, 23);
             comboBoxSearchField_NRY.TabIndex = 2;
             // 
             // textBoxSearch_NRY
             // 
-            textBoxSearch_NRY.Location = new Point(184, 12);
+            textBoxSearch_NRY.Location = new Point(184, 21);
             textBoxSearch_NRY.Name = "textBoxSearch_NRY";
             textBoxSearch_NRY.Size = new Size(250, 23);
             textBoxSearch_NRY.TabIndex = 1;
@@ -429,7 +454,7 @@
             // labelSearch_NRY
             // 
             labelSearch_NRY.AutoSize = true;
-            labelSearch_NRY.Location = new Point(20, 15);
+            labelSearch_NRY.Location = new Point(20, 24);
             labelSearch_NRY.Name = "labelSearch_NRY";
             labelSearch_NRY.Size = new Size(154, 15);
             labelSearch_NRY.TabIndex = 0;
@@ -463,11 +488,13 @@
             // 
             // buttonBuildChart_NRY
             // 
+            buttonBuildChart_NRY.Cursor = Cursors.Hand;
+            buttonBuildChart_NRY.Image = (Image)resources.GetObject("buttonBuildChart_NRY.Image");
             buttonBuildChart_NRY.Location = new Point(284, 8);
             buttonBuildChart_NRY.Name = "buttonBuildChart_NRY";
-            buttonBuildChart_NRY.Size = new Size(75, 23);
+            buttonBuildChart_NRY.Size = new Size(75, 52);
             buttonBuildChart_NRY.TabIndex = 2;
-            buttonBuildChart_NRY.Text = "Построить";
+            toolTip_NRY.SetToolTip(buttonBuildChart_NRY, "Строит график по заданным параметрам");
             buttonBuildChart_NRY.UseVisualStyleBackColor = true;
             buttonBuildChart_NRY.Click += buttonBuildChart_NRY_Click;
             // 
@@ -536,21 +563,25 @@
             // 
             // buttonExportStats_NRY
             // 
-            buttonExportStats_NRY.Location = new Point(156, 470);
+            buttonExportStats_NRY.Cursor = Cursors.Hand;
+            buttonExportStats_NRY.Image = (Image)resources.GetObject("buttonExportStats_NRY.Image");
+            buttonExportStats_NRY.Location = new Point(167, 469);
             buttonExportStats_NRY.Name = "buttonExportStats_NRY";
-            buttonExportStats_NRY.Size = new Size(135, 30);
+            buttonExportStats_NRY.Size = new Size(75, 45);
             buttonExportStats_NRY.TabIndex = 2;
-            buttonExportStats_NRY.Text = "Экспорт";
+            toolTip_NRY.SetToolTip(buttonExportStats_NRY, "Позволяет созранить статистику в выбранной папке");
             buttonExportStats_NRY.UseVisualStyleBackColor = true;
             buttonExportStats_NRY.Click += buttonExportStats_NRY_Click;
             // 
             // buttonRefreshStats_NRY
             // 
-            buttonRefreshStats_NRY.Location = new Point(10, 470);
+            buttonRefreshStats_NRY.Cursor = Cursors.Hand;
+            buttonRefreshStats_NRY.Image = (Image)resources.GetObject("buttonRefreshStats_NRY.Image");
+            buttonRefreshStats_NRY.Location = new Point(50, 469);
             buttonRefreshStats_NRY.Name = "buttonRefreshStats_NRY";
-            buttonRefreshStats_NRY.Size = new Size(135, 30);
+            buttonRefreshStats_NRY.Size = new Size(75, 45);
             buttonRefreshStats_NRY.TabIndex = 2;
-            buttonRefreshStats_NRY.Text = "Обновить";
+            toolTip_NRY.SetToolTip(buttonRefreshStats_NRY, "Обновляет поля статистики");
             buttonRefreshStats_NRY.UseVisualStyleBackColor = true;
             buttonRefreshStats_NRY.Click += buttonRefreshStats_NRY_Click;
             // 
@@ -613,6 +644,11 @@
             textBoxCarStats_NRY.ScrollBars = ScrollBars.Vertical;
             textBoxCarStats_NRY.Size = new Size(268, 122);
             textBoxCarStats_NRY.TabIndex = 1;
+            // 
+            // toolTip_NRY
+            // 
+            toolTip_NRY.ToolTipIcon = ToolTipIcon.Info;
+            toolTip_NRY.ToolTipTitle = "Подсказка";
             // 
             // MainForm
             // 
@@ -702,5 +738,6 @@
         private Label labelChartType_NRY;
         private ComboBox comboBoxChartSource_NRY;
         private Label labelSource_NRY;
+        private ToolTip toolTip_NRY;
     }
 }
